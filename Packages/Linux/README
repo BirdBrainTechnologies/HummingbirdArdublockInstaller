@@ -1,0 +1,11 @@
+Hummingbird Ardublock Installer
+A simple application to enable easy installation of Ardublock with the Hummingbird libraries.
+-----------------------------------
+To run:
+Install the Arduino IDE from your distribution's repositories or arduino.cc.
+
+Run it at least once.
+
+Then, return to this folder and click run.sh to run the installer. You may have to set run.sh to be executable by doing chmod +x ./run.sh or by using your file manager.
+
+Click on the install button to copy the files into the correct directories.

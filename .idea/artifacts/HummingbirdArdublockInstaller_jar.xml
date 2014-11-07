@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="HummingbirdArdublockInstaller:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HummingbirdArdublockInstaller_jar</output-path>
+    <root id="archive" name="HummingbirdArdublockInstaller.jar">
+      <element id="module-output" name="HummingbirdArdublockInstaller" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-lang3-3.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-io-2.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
