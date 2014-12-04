@@ -13,6 +13,7 @@ import java.util.Hashtable;
 public class HummingbirdArdublockInstaller extends JFrame {
     private JButton goButton;
     private JPanel MainPanel;
+    private JCheckBox AdvancedArdublock;
 
     public HummingbirdArdublockInstaller(){
         goButton.addActionListener(new ActionListener() {
@@ -33,7 +34,19 @@ public class HummingbirdArdublockInstaller extends JFrame {
                     load(new FileInputStream(prefs),table);
                     String sketchbook= (String) table.get("sketchbook.path");
                     FileUtils.copyDirectory(new File("files/Hummingbird"),new File(sketchbook+"/libraries/Hummingbird"));
-                    FileUtils.copyFileToDirectory(new File("files/ardublock-all.jar"),new File(sketchbook+"/tools/ArduBlockTool/tool"));
+                    FileUtils.copyDirectory(new File("files/hardware/hbduo"),new File(sketchbook+"/hardware/hbduo"));
+                    if(AdvancedArdublock.isSelected()) {
+                        FileUtils.copyFileToDirectory(new File("files/Ardublock_advanced/ardublock-all.jar"), new File(sketchbook + "/tools/ArduBlockTool/tool"));
+                    }
+                    else {
+                        FileUtils.copyFileToDirectory(new File("files/Ardublock_normal/ardublock-all.jar"), new File(sketchbook + "/tools/ArduBlockTool/tool"));
+                    }
+
+                    FileUtils.copyDirectory(new File("files/ArdublockDuoExamples"),new File(sketchbook+"/ArdublockDuoExamples"));
+
+                    if(SystemUtils.IS_OS_WINDOWS) {
+                        Process p = Runtime.getRuntime().exec("files\\WindowsDrivers\\runDriverInstall.bat");
+                    }
                     JOptionPane.showMessageDialog(null,"Done!");
                 }catch(Exception e){
                     JOptionPane.showMessageDialog(null,"An error occurred. Please try again.");
