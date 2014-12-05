@@ -44,10 +44,16 @@ public class HummingbirdArdublockInstaller extends JFrame {
 
                     FileUtils.copyDirectory(new File("files/ArdublockDuoExamples"),new File(sketchbook+"/ArdublockDuoExamples"));
 
+                    String message;
                     if(SystemUtils.IS_OS_WINDOWS) {
                         Process p = Runtime.getRuntime().exec("files\\WindowsDrivers\\runDriverInstall.bat");
+                        message = "Done copying files, now installing Duo driver";
                     }
-                    JOptionPane.showMessageDialog(null,"Done!");
+                    else
+                    {
+                        message = "Done!";
+                    }
+                    JOptionPane.showMessageDialog(null,message);
                 }catch(Exception e){
                     JOptionPane.showMessageDialog(null,"An error occurred. Please try again.");
                     e.printStackTrace();
