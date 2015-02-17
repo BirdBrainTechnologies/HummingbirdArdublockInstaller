@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1920">
+<PageBlocks>
+<Block genus-name="hummingbird_led" id="108">
+<Location>
+<X>167</X>
+<Y>298</Y>
+</Location>
+<BeforeBlockId>106</BeforeBlockId>
+<AfterBlockId>111</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="109" connector-kind="socket" connector-type="number" init-type="number" label="Port# (1-4)" position-type="single"/>
+<BlockConnector con-block-id="110" connector-kind="socket" connector-type="number" init-type="number" label="Intensity (0-255)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="hummingbird_statusled" id="111">
+<Location>
+<X>167</X>
+<Y>378</Y>
+</Location>
+<BeforeBlockId>108</BeforeBlockId>
+<AfterBlockId>113</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="112" connector-kind="socket" connector-type="number" init-type="number" label="Intensity (0-255)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="113">
+<Location>
+<X>167</X>
+<Y>458</Y>
+</Location>
+<BeforeBlockId>111</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="114" connector-kind="socket" connector-type="number" init-type="number" label="milliseconds" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="114">
+<Label>1000</Label>
+<Location>
+<X>353</X>
+<Y>461</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="113" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="112">
+<Label>0</Label>
+<Location>
+<X>335</X>
+<Y>381</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="111" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="110">
+<Label>0</Label>
+<Location>
+<X>335</X>
+<Y>325</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="108" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="109">
+<Location>
+<X>335</X>
+<Y>301</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="108" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="delay" id="106">
+<Location>
+<X>167</X>
+<Y>268</Y>
+</Location>
+<BeforeBlockId>104</BeforeBlockId>
+<AfterBlockId>108</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="107" connector-kind="socket" connector-type="number" init-type="number" label="milliseconds" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="107">
+<Label>500</Label>
+<Location>
+<X>353</X>
+<Y>271</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="106" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="hummingbird_statusled" id="104">
+<Location>
+<X>167</X>
+<Y>188</Y>
+</Location>
+<BeforeBlockId>101</BeforeBlockId>
+<AfterBlockId>106</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="105" connector-kind="socket" connector-type="number" init-type="number" label="Intensity (0-255)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="105">
+<Label>255</Label>
+<Location>
+<X>335</X>
+<Y>191</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="104" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="hummingbird_led" id="101">
+<Location>
+<X>167</X>
+<Y>108</Y>
+</Location>
+<BeforeBlockId>100</BeforeBlockId>
+<AfterBlockId>104</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="102" connector-kind="socket" connector-type="number" init-type="number" label="Port# (1-4)" position-type="single"/>
+<BlockConnector con-block-id="103" connector-kind="socket" connector-type="number" init-type="number" label="Intensity (0-255)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="103">
+<Label>255</Label>
+<Location>
+<X>335</X>
+<Y>135</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="101" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="102">
+<Location>
+<X>335</X>
+<Y>111</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="101" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="loop" id="100">
+<Location>
+<X>100</X>
+<Y>100</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="101" connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
