@@ -5,6 +5,8 @@
       <element id="module-output" name="HummingbirdArdublockInstaller" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-lang3-3.3.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-io-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jna.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jna-platform.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

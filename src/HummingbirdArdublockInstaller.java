@@ -41,14 +41,20 @@ public class HummingbirdArdublockInstaller extends JFrame {
                     if(prefs.exists()) {
                         load(new FileInputStream(prefs), table);
                         sketchbook = (String) table.get("sketchbook.path");
+                        System.out.println("Preferences file exists");
                     }
                     else {
-                        fc = new JFileChooser();
-                        fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 
-                        System.out.println(fc.getX() + " " + fc.getY() + " " + MainPanel.getX() + " " + MainPanel.getY());
+                        System.out.println("Preferences file does not exist, ask user to locate");
+                        fc = new JFileChooser();
+                        System.out.println("Got here");
+                        fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                        System.out.println("Directories only");
                         JOptionPane.showMessageDialog(null,"Couldn't automatically find the Arduino Sketchbook directory, press OK to manually select it.\n If unsure of the location, open the Arduino IDE, select File->Preferences and note the \"Sketchbook\" location.");
+
+                        System.out.println("Show dialog");
                         int returnVal = fc.showDialog(HummingbirdArdublockInstaller.this, "Select");
+                        System.out.println("Show file chooser");
                         if(returnVal == JFileChooser.APPROVE_OPTION) {
                             sketchbook = fc.getSelectedFile().toString();
                             installHelpText.setText("Files will be installed to " + sketchbook);
