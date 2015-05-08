@@ -24,15 +24,15 @@ public class HummingbirdArdublockInstaller extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 File prefs;
                 if(SystemUtils.IS_OS_LINUX) {
-                    prefs = new File(System.getProperty("user.home") + "/.arduino/preferences.txt");
+                    prefs = new File(System.getProperty("user.home") + "/.arduino15/preferences.txt");
                 }
                 else if(SystemUtils.IS_OS_WINDOWS) {
-                    prefs= new File(System.getenv("APPDATA")+"/Arduino/preferences.txt");
+                    prefs= new File(System.getenv("APPDATA")+"/Arduino15/preferences.txt");
                     if(!prefs.exists()) {
-                        prefs = new File(com.sun.jna.platform.win32.Shell32Util.getFolderPath(0x001a) + "/Arduino/preferences.txt");
+                        prefs = new File(com.sun.jna.platform.win32.Shell32Util.getFolderPath(0x001a) + "/Arduino15/preferences.txt");
                     }
                 } else {
-                    prefs= new File(System.getProperty("user.home")+"/Library/Arduino/preferences.txt");
+                    prefs= new File(System.getProperty("user.home")+"/Library/Arduino15/preferences.txt");
                 }
                 Hashtable table = new Hashtable();
                 try {
@@ -41,7 +41,6 @@ public class HummingbirdArdublockInstaller extends JFrame {
                     if(prefs.exists()) {
                         load(new FileInputStream(prefs), table);
                         sketchbook = (String) table.get("sketchbook.path");
-                        System.out.println("Preferences file exists");
                     }
                     else {
 
@@ -85,7 +84,7 @@ public class HummingbirdArdublockInstaller extends JFrame {
                     }
                     JOptionPane.showMessageDialog(null,message);
                 }catch(Exception e){
-                    JOptionPane.showMessageDialog(null,"An error occurred. Please try again or use the manual way to install described in the tutorial.");
+                    JOptionPane.showMessageDialog(null,"An error occurred. Please try again or use the manual way to install our libraries as described in the online tutorial.");
                     e.printStackTrace();
                 }
             }
