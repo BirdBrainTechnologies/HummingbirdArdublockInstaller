@@ -46,11 +46,15 @@
 		</data>
 		<key>Resources/Java/files/Ardublock_advanced/ardublock-all.jar</key>
 		<data>
-		XEqAUbrR03rO4rz7wbvuZ743Szw=
+		28oxd+rpqD3bACYQ1IR8prGnYq4=
+		</data>
+		<key>Resources/Java/files/Ardublock_normal/.DS_Store</key>
+		<data>
+		9BNMDBd5hKiNnSJgZlINBZCL8vs=
 		</data>
 		<key>Resources/Java/files/Ardublock_normal/ardublock-all.jar</key>
 		<data>
-		iKTDYaKMgL8vMEGsoFa2GqDFGY4=
+		CWc9BxxVGnN+Q8g+eQMx8I3YIzo=
 		</data>
 		<key>Resources/Java/files/Hummingbird/Hummingbird Arduino API Description.pdf</key>
 		<data>
@@ -265,22 +269,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XEqAUbrR03rO4rz7wbvuZ743Szw=
+			28oxd+rpqD3bACYQ1IR8prGnYq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			SMbyNgEHbwx9arsoBweSor9+6r/UXUanmcWsCw94j+U=
+			EZCaPEtZUCZxQIQdAj/B8x79TGbqRMwwivkNMlXKg6A=
 			</data>
 		</dict>
 		<key>Resources/Java/files/Ardublock_normal/ardublock-all.jar</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iKTDYaKMgL8vMEGsoFa2GqDFGY4=
+			CWc9BxxVGnN+Q8g+eQMx8I3YIzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hEr6yYC8UyD+0dF2lulpxlKKRYhEOqKWhJS0L5Ksgy4=
+			GGyehFkC/p3hthrZVXxcCb7NRq9tPDDsLs2Inqd1PMo=
 			</data>
 		</dict>
 		<key>Resources/Java/files/Hummingbird/Hummingbird Arduino API Description.pdf</key>
